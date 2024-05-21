@@ -48,20 +48,14 @@ class Container
 		$this->bind($name, $resolver, true);
 	}
 
-	public function all()
-	{
-		print_r($this->service);
-	}
-
 	/**
 	 * Mengembalikkan object dengan memenuhi dependency yang dibutuhkan
-	 * 
+	 * Atau mengembalikan object yang telah didefinisikan
 	 * @param string|\Closure $class classname
 	 * 
 	 * @return \Closure
 	 */
-
-	public function make(String $name)
+	public function make(String $name): Closure
 	{
 		if (!empty($this->service[$name])) {
 			if ($this->service[$name]['resolver'] instanceof Closure) {
