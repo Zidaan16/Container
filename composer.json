@@ -1,0 +1,19 @@
+{
+    "name": "tiaras/php-container",
+    "description": "Container for PHP",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tiaras\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zidaan16",
+            "email": "ahmadzidan1316@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
